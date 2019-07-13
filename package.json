@@ -1,0 +1,14 @@
+{
+  "name": "checkpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:neromaki/checkpoint.git",
+  "author": "Shaun Wall <neromaki@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --mode=development --hot"
+  },
+  "dependencies": {
+    "yarn": "^1.7.0"
+  }
+}
