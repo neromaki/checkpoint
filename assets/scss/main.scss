@@ -2,6 +2,7 @@
 $white: #FFFFFF;
 $black: #222222;
 $yellow: rgb(219, 182, 49);
+$yellow--checkpoint: #FFC700;
 $pink: #FE6767;
 $blue: #0281B7;
 $red: #CE3838;
@@ -46,6 +47,25 @@ svg * {
     }
 }
 
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    margin-top: 5px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-7px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
 
 @keyframes gradientPulse {
     0%{background-position:0% 50%}
@@ -59,9 +79,10 @@ svg * {
 }
 
 .checkpoint-logo {
-    width: 20vw;
-    min-width: 200px;
+    height: 11vw;
+    min-height: 150px;
     margin: 40px 0 20px;
+    animation: bounce 3s ease-in-out infinite;
 }
 
 .tagline {
@@ -101,11 +122,13 @@ svg * {
     box-shadow: 0 5px 0 0 darken($white, 20%);
     color: $black;
     transition: all .25s;
-    mix-blend-mode: normal;
+    //mix-blend-mode: normal;
     margin: 20px 0;
 
     &:hover {
-        mix-blend-mode: exclusion;
+        //mix-blend-mode: exclusion;
+        background: $yellow--checkpoint;
+        box-shadow: 0 5px 0 0 darken($yellow--checkpoint, 15%);
     }
 
     svg {
@@ -152,10 +175,12 @@ svg * {
     border-radius: 5px;
     box-shadow: 0 5px 0 0 darken($white, 20%);
     transition: all .25s;
-    mix-blend-mode: normal;
+    //mix-blend-mode: normal;
 
     &:hover {
-        mix-blend-mode: exclusion;
+        //mix-blend-mode: exclusion;
+        background: $yellow--checkpoint;
+        box-shadow: 0 5px 0 0 darken($yellow--checkpoint, 15%);
     }
 
     svg {
@@ -172,7 +197,7 @@ svg * {
 }
 
 .code-of-conduct {
-    background: $yellow;
+    background: $yellow--checkpoint;
     color: $black;
     padding: 60px 25px;
     margin: 150px -35px 0;
