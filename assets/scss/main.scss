@@ -26,6 +26,17 @@ svg * {
     fill: $white;
 }
 
+.logo--shadow {
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    background:rgba(0,0,0,.1);
+    display: block;
+    margin: 0 auto;
+    animation: shadow 3s ease-in-out infinite;
+    display: none;
+}
+
 .background {
     text-align: center;
     
@@ -54,23 +65,23 @@ h1 {
     margin-top: 5px;
 }
 
+@keyframes shadow {
+    0% { transform: scale(1) }
+    60% { transform: scale(0.75) }
+    100% { transform: scale(1) }
+}
+
 @keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    60% {
-        transform: translateY(-7px)
-    }
-    100% {
-        transform: translateY(0)
-    }
+    0% { transform: translateY(0) }
+    60% { transform: translateY(-7px) }
+    100% { transform: translateY(0) }
 }
 
 
 @keyframes gradientPulse {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
 
 .tagline {
