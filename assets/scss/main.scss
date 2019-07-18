@@ -229,6 +229,22 @@ h1 {
 }
 
 .social--info {
+    max-width: 960px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    a {
+        color: white;
+        font-weight: 600;
+    }
+
+    img {
+        width: 100%;
+    }
+
     @media(max-width: 460px) {
         display: flex;
         flex-direction: column;
