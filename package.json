@@ -9,6 +9,6 @@
     "start": "NODE_ENV=development webpack-dev-server --mode=development --hot"
   },
   "dependencies": {
-    "yarn": "^1.7.0"
+    "yarn": "^1.17.3"
   }
 }
