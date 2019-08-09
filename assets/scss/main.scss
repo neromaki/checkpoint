@@ -283,6 +283,7 @@ h1 {
     .gallery__images {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     img {
