@@ -295,3 +295,35 @@ h1 {
         }
     }
 }
+
+footer {
+    background: $yellow--checkpoint;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    margin-top: -2px;
+    background: $black;
+
+    > svg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .socials {
+        a {
+            position: relative;
+            top: 0;
+            margin-left: 20px;
+            transition: top .25s;
+
+            &:hover {
+                top: -5px;
+            }
+
+            svg {
+                width: 20px;
+            }
+        }
+    }
+}
