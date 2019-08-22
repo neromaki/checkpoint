@@ -44,7 +44,7 @@ svg * {
     animation: gradientPulse 45s ease infinite;
     background: linear-gradient(90deg, $pink, $blue, $red, $green, $orange, $yellow);
     background-size: 1000% 100%;
-    padding: 0 35px;
+    padding: 0 35px 150px;
 
     &:after {
         //content: '';
@@ -213,14 +213,14 @@ h1 {
     background: $yellow--checkpoint;
     color: $black;
     padding: 60px 25px;
-    margin: 150px -35px 0;
+    
 
     .code {
         text-align: left;
         max-width: 680px;
         line-height: 1.6em;
         display: block;
-        margin: 120px auto 0;
+        margin: 90px auto 0;
 
         h2 {
             line-height: 1.5em;
@@ -339,6 +339,38 @@ h1 {
  
         @media(max-width: 480px) {
             width: 100%;
+        }
+    }
+}
+
+footer {
+    background: $yellow--checkpoint;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    margin-top: -2px;
+    background: $black;
+
+    > svg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .socials {
+        a {
+            position: relative;
+            top: 0;
+            margin-left: 20px;
+            transition: top .25s;
+
+            &:hover {
+                top: -5px;
+            }
+
+            svg {
+                width: 20px;
+            }
         }
     }
 }
