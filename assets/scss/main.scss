@@ -44,7 +44,6 @@ svg * {
     animation: gradientPulse 45s ease infinite;
     background: linear-gradient(90deg, $pink, $blue, $red, $green, $orange, $yellow);
     background-size: 1000% 100%;
-    padding: 0 35px 150px;
 
     &:after {
         //content: '';
@@ -163,6 +162,8 @@ h1 {
 }
 
 .social--parking {
+    margin-top: 40px;
+
     svg {
         height: 25px;
         position: relative;
@@ -215,7 +216,7 @@ h1 {
 .code-of-conduct {
     background: $yellow--checkpoint;
     color: $black;
-    padding: 60px 25px;
+    padding: 1px 25px 60px;
     
 
     .code {
@@ -247,6 +248,7 @@ h1 {
 .social--info {
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 50px;
 
     h2 {
         font-size: 1.75em;
@@ -280,8 +282,8 @@ h1 {
     border-top: 1px solid rgba(255,255,255,.15);
 
     margin-bottom: 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255,255,255,.15);
+    //padding-bottom: 25px;
+    //border-bottom: 1px solid rgba(255,255,255,.15);
     
 
     .email-signup__mailchimp {
@@ -329,26 +331,68 @@ h1 {
     }
 }
 
-.gallery {
-    margin-top: 75px;
 
-    @media(max-width: 480px) {
-        margin-top: 50px;
+.checkpoint-arcade {
+    padding: 50px 0;
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+
+    p {
+        max-width: 720px;
+        display: block;
+        margin: 15px auto;
     }
 
+    .arcade-logo {
+        max-height: 100px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .arcade-submit {
+        padding: 10px 15px;
+        margin-top: 25px;
+
+        svg {
+            height: 20px;
+            width: auto;
+            margin-right: 5px;
+            opacity: .75;
+        }
+
+        span {
+            font-size: 1.25em;
+        }
+    }
+}
+
+.gallery {
+    margin-top: 50px;
+
+    // @media(max-width: 480px) {
+    //     margin-top: 50px;
+    // }
+
     .gallery__images {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        //display: flex;
+        // flex-wrap: wrap;
+        // align-items: center;
+    }
+
+    .gallery__links {
+        margin-top: 25px;
     }
 
     img {
-        width: calc((100% / 2) - 10px);
-        margin: 5px;
+        //width: calc((100% / 2) - 10px);
+        width: 100%;
+        //margin: 5px;
  
-        @media(max-width: 480px) {
-            width: 100%;
-        }
+        // @media(max-width: 480px) {
+        //     width: 100%;
+        // }
     }
 }
 
