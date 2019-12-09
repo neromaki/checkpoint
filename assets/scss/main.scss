@@ -459,3 +459,20 @@ footer {
         }
     }
 }
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0;
+
+    > div {
+        margin: 0 25px;
+    }
+
+    img {
+        max-height: 50px;
+        width: auto;
+    }
+}
