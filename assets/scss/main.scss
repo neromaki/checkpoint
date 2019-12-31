@@ -42,15 +42,15 @@ svg * {
     
     //background-color: $yellow;
     //animation: gradientPulse 45s ease infinite;
-    //background: linear-gradient(90deg, $pink, $blue, $red, $green, $orange, $yellow);
-    //animation: gradientPulse 20s ease infinite;
-    //background: linear-gradient(90deg, #0449AF, #AF0442);
-    //background-size: 1000% 100%;
-    background-color: #0449AF;
-    background-image: url('/assets/images/snow-background.png');
-    background-size: contain;
-    background-repeat: repeat-y;
-    animation: scroll 90s linear infinite;
+    background: linear-gradient(90deg, $pink, $blue, $red, $green, $orange, $yellow);
+    animation: gradientPulse 20s ease infinite;
+    // background: linear-gradient(90deg, #0449AF, #AF0442);
+    background-size: 1000% 100%;
+    // background-color: #0449AF;
+    // background-image: url('/assets/images/snow-background.png');
+    // background-size: contain;
+    // background-repeat: repeat-y;
+    // animation: scroll 90s linear infinite;
 
 
     &:after {
@@ -176,6 +176,85 @@ h1 {
 
         svg {
             height: 20px;
+        }
+    }
+}
+
+.social--location {
+    position: relative;
+    @media(max-width: 767px) {
+        margin-top: 40px;
+    }
+
+    .emphasis {
+
+        span {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 100%;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            color: #fff;
+
+            @media(min-width: 767px) {
+                top: -40px;
+                transform: rotate(-7deg);
+            }
+        }
+
+        .line {
+            position: absolute;
+            width: 3px;
+            height: 15px;
+            background: rgba(255,255,255,.75);
+
+            &.line1 {
+                top: -25px;
+                right: -6px;
+                transform: rotate(30deg);
+            }
+
+            &.line2 {
+                top: 10px;
+                right: -16px;
+                transform: rotate(75deg);
+            }
+
+            &.line3 {
+                bottom: -20px;
+                right: -16px;
+                transform: rotate(130deg);
+            }
+
+            &.line4 {
+                top: -25px;
+                left: -6px;
+                transform: rotate(-30deg);
+            }
+
+            &.line5 {
+                top: 10px;
+                left: -16px;
+                transform: rotate(-75deg);
+            }
+
+            &.line6 {
+                bottom: -20px;
+                left: -16px;
+                transform: rotate(-130deg);
+            }
+
+            &.line7 {
+                bottom: -35px;
+                left: 26px;
+                transform: rotate(-165deg);
+            }
+            &.line8 {
+                bottom: -35px;
+                right: 26px;
+                transform: rotate(160deg);
+            }
         }
     }
 }
