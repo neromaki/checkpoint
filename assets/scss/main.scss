@@ -449,6 +449,13 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, .15);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 
+    @media(max-width:767px) {
+        margin-left: -25px;
+        margin-right: -25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
     p {
         max-width: 720px;
         display: block;
@@ -504,6 +511,7 @@ h1 {
 
             @media(max-width: 765px) {
                 flex-basis: 99%;
+                margin-bottom: 35px;
             }
 
             h3 {
