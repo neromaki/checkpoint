@@ -31,7 +31,6 @@ svg * {
     height: 20px;
     border-radius: 50%;
     background:rgba(0,0,0,.1);
-    display: block;
     margin: 0 auto;
     animation: shadow 3s ease-in-out infinite;
     display: none;
@@ -445,6 +444,7 @@ h1 {
 .checkpoint-arcade {
     padding: 50px 0;
     margin-top: 50px;
+    background: radial-gradient(150% 125% at 0% 0%, #6B069A 4.21%, #1C8E87 100%);
 
     border-top: 1px solid rgba(255, 255, 255, .15);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
@@ -476,9 +476,80 @@ h1 {
             font-size: 1.25em;
         }
     }
+
+    .games-header {
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-bottom:25px;
+        border-top: 1px solid rgba(255, 255, 255, .15);
+
+        text-align:center;
+        
+    }
+
+    .games {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 960px;
+        margin: 0 auto;
+
+        .game {
+            flex-basis: 28%;
+            margin: 1%;
+            background: rgba(255,255,255,.1);
+            padding: 15px;
+            position: relative;
+            padding-bottom: 75px;
+
+            @media(max-width: 765px) {
+                flex-basis: 99%;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                margin: 15px 0 0;
+                text-align: left;
+            }
+
+            h4 {
+                font-size: 0.75rem;
+                text-align: left;
+                margin: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            a {
+                background: $white;
+                color: $black;
+                text-decoration: none;
+                padding: 5px 10px;
+                margin-top: 20px;
+                display: inline-block;
+                border-radius: 5px;
+                box-shadow: 0 5px 0 0 darken($white, 20%);
+                transition: all .25s;
+                margin: 10px 5px;
+
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                &:hover {
+                    background: darken($white, 10%);
+                }
+            }
+        }
+    }
 }
 
 .gallery {
+    max-width: 960px;
+    margin: 0 auto;
     margin-top: 50px;
 
     // @media(max-width: 480px) {
