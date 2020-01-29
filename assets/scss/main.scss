@@ -62,7 +62,9 @@ svg * {
         height: 100%;
         opacity: .35;
     }
+}
 
+.meetup {
     @media(max-width: 650px) {
         padding-left: 25px;
         padding-right: 25px;
@@ -443,10 +445,10 @@ h1 {
 
 .checkpoint-arcade {
     padding: 50px 0;
-    margin-top: 50px;
+    margin-bottom: 50px;
     background: radial-gradient(150% 125% at 0% 0%, #6B069A 4.21%, #1C8E87 100%);
 
-    border-top: 1px solid rgba(255, 255, 255, .15);
+    //border-top: 1px solid rgba(255, 255, 255, .15);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 
     @media(max-width:767px) {
