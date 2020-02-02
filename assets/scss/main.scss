@@ -346,9 +346,7 @@ h1 {
     }
 
     @media(max-width: 540px) {
-        margin-top: 100px;
-        margin-left: -25px;
-        margin-right: -25px;
+        padding-top: 50px;
 
         .code {
             margin-top: 0;
@@ -445,7 +443,7 @@ h1 {
 
 .checkpoint-arcade {
     padding: 50px 0;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
     background: radial-gradient(150% 125% at 0% 0%, #6B069A 4.21%, #1C8E87 100%);
 
     //border-top: 1px solid rgba(255, 255, 255, .15);
@@ -500,18 +498,32 @@ h1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 960px;
+        //max-width: 960px;
         margin: 0 auto;
+        justify-content: center;
 
         .game {
-            flex-basis: 28%;
+            flex-basis: 15.75%;
             margin: 1%;
             background: rgba(255,255,255,.1);
             padding: 15px;
             position: relative;
             padding-bottom: 75px;
 
+            @media(max-width: 1340px) {
+                flex-basis: 20%;
+            }
+
+            @media(max-width: 1024px) {
+                flex-basis: 27%;
+            }
+
             @media(max-width: 765px) {
+                flex-basis: 43%;
+                margin-bottom: 35px;
+            }
+
+            @media(max-width: 600px) {
                 flex-basis: 99%;
                 margin-bottom: 35px;
             }
@@ -554,6 +566,32 @@ h1 {
                 }
             }
         }
+    }
+}
+
+.arcade__gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 75px 0 50px;
+
+    .arcade__photo {
+        
+        margin: 0 5px;
+
+        img {
+            width: 100%;
+        }
+
+        @media(max-width: 767px) {
+            margin: 5px;
+        }
+    }
+
+    @media(max-width: 767px) {
+        margin: 50px 0;
+        flex-direction: column;
     }
 }
 
